@@ -1,16 +1,14 @@
 {
-  "name": "gatsby-remark-images-anywhere",
-  "version": "1.3.0",
+  "name": "@benedictyappy/gatsby-remark-images-anywhere",
+  "version": "5.0.0-beta.0",
   "description": "Handle images with relative, absolute, remote path for gatsby-transformer-remark",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p .",
-    "prepublishOnly": "tsc -p .",
-    "test": "tap"
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/d4rekanguok/gatsby-remark-images-extra.git"
+    "url": "git+https://github.com/benedictjohannes/gatsby-remark-images-anywhere.git"
   },
   "keywords": [
     "gatsby",
@@ -18,28 +16,23 @@
     "remark",
     "remark-images"
   ],
-  "author": "Derek Nguyen <derek@penandpillow.com>",
+  "author": "Benedict Yappy <benedict@encelerate.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/d4rekanguok/gatsby-remark-images-extra/issues"
+    "url": "https://github.com/benedictjohannes/gatsby-remark-images-anywhere/issues"
   },
-  "homepage": "https://github.com/d4rekanguok/gatsby-remark-images-extra#readme",
+  "homepage": "https://github.com/benedictjohannes/gatsby-remark-images-anywhere.git",
   "devDependencies": {
-    "@types/fs-extra": "^8.0.0",
-    "gatsby": "^2.12.0",
-    "gatsby-plugin-sharp": "^2.2.7",
-    "gatsby-source-filesystem": "^2.1.5",
-    "tap": "^14.9.2",
-    "typescript": "^3.5.3"
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "parse5": "^5.1.0",
     "slash" : "^3.0.0",
-    "unist-util-select": "^2.0.2"
+    "unist-util-select": "^3.0.4"
   },
   "peerDependencies": {
-    "gatsby": "^2.12.0",
-    "gatsby-source-filesystem": "^2.0.0",
-    "gatsby-plugin-sharp": "^2.2.7"
+    "gatsby": "^5.0.0",
+    "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-plugin-sharp": "^5.0.0"
   }
 }

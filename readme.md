@@ -26,7 +26,7 @@ title: Hello World
 
 ## Why
 
-`gatsby-remark-images` is awesome. But if you use a CMS that paste remote url, or path that's not relative to the markdown file itself, it won't work. Originally this plugin was meant to find a way to feed remote images to `gatsby-remark-images`, but that didn't work out. This is a simpler & more flexible image plugin supports.
+`gatsby-remark-images` is awesome, but it doesn't work for images that isn't relative to the markdown file itself, it won't work. [The original package](https://github.com/d4rekanguok/gatsby-remark-images-anywhere) tried to solve this by adding support to both relative-path and URL markdown images. However, it was archived and it doesn't work with Gatsby v5. This fork attempts to update the plugin and solve the compatibility issues. New features might be added along the way.
 
 
 - [ ] doesn't blur in or fade in image
@@ -35,16 +35,6 @@ title: Hello World
 - [x] allow you to pass in more customized sharp methods (`fix`, `fluid`, `resize`)
 - [x] allow you to write your own image template (so you can implement the stuff above by yourself, though I do want to support those by default)
 
-## Should I use this?
-
-- If you don't use remote images or CMS, just use [`gatsby-remark-images`](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-images)
-
-- If you're using vanilla NetlifyCMS, just use [`gatsby-remark-relative-images`](https://github.com/danielmahon/gatsby-remark-relative-images).
-
-- If you need remote image, try this one out!
-
-- If you don't need remote images or CMS, but want more flexibility, try this one out.
-
 
 ### Protocol relative path
 See the whitelisted list [here](./src/relative-protocol-whitelist.ts)
@@ -52,9 +42,9 @@ See the whitelisted list [here](./src/relative-protocol-whitelist.ts)
 ## Installation
 
 ```bash
-yarn add gatsby-remark-images-anywhere
+yarn add @benedictyappy/gatsby-remark-images-anywhere
 # or
-npm install gatsby-remark-images-anywhere
+npm install @benedictyappy/gatsby-remark-images-anywhere
 ```
 
 ```js

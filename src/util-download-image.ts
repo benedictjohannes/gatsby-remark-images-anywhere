@@ -37,11 +37,9 @@ export const downloadImage = async ({
         : url
       const fileNode = await createRemoteFileNode({
         url: imageUrl,
-        store,
         cache,
         createNode,
         createNodeId,
-        reporter,
         parentNodeId: id,
       })
 

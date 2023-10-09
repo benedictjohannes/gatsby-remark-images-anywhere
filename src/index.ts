@@ -51,7 +51,7 @@ const addImage = async (
   const { touchNode, createNode } = actions
 
   // gatsby parent file node of this markdown node
-  const dirPath = getNode(markdownNode.parent).dir
+  const dirPath = getNode(markdownNode.parent!)?.dir as string
   const { directory } = store.getState().program
 
   const imgNodes: RemarkNode[] = select.selectAll('image[url]', mdast)
